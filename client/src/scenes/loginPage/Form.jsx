@@ -100,7 +100,7 @@ const Form = () => {
       setLoading(false);
     } catch (error) {
       setLoading(false);
-      toast.error('Error : ', error);
+      toast.error('Error');
     }
 
   };
