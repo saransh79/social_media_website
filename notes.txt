@@ -1,0 +1,12 @@
+-> cors is cross origin resource sharing that allows a server to request from any domain or port other than its own.
+
+-> Multer is a middleware for handling form-data, which is mainly used for uploading files.
+
+-> Helmet is express middleware which helps to secure express app by setting various HTTP headers.
+
+-> fileURLToPath function decodes the file URL to a path string
+
+-> res.send Sends data and end the request & res.json Sends data in JSON format and ends the request
+
+to remove git file
+rd -r/s .git
