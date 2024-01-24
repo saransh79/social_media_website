@@ -100,12 +100,14 @@ const Form = () => {
       setLoading(false);
     } catch (error) {
       setLoading(false);
-      toast.error('Error');
+      console.log(error);
+      toast.error('Some error occured!');
     }
 
   };
 
   const login = async (values, onSubmitProps) => {
+    try {
       setLoading(true);
       const loggedInResponse = await fetch(`${BASE_URL}/auth/login`, {
         method: "POST",
@@ -132,6 +134,12 @@ const Form = () => {
         }
       }
       setLoading(false)
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      toast.error('Some error occured!');
+    }
+      
   };
 
   const handleFormSubmit = async (values, onSubmitProps) => {
